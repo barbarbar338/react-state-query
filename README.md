@@ -5,7 +5,7 @@
 [![issues](https://img.shields.io/github/issues/barbarbar338/react-state-query?color=red&logo=github&style=for-the-badge)](https://github.com/barbarbar338/react-state-query)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/barbarbar338/readme-template/main/icon.png" alt="Logo" />
+  <img src="https://raw.githubusercontent.com/barbarbar338/readme-template/main/icon.png" alt="Logo" width="160" height="160" />
   <h3 align="center">React State Query</h3>
 
   <p align="center">
@@ -31,18 +31,21 @@
 import { useStateQuery } from "react-state-query";
 
 function App() {
-	const [value, setValue] = useStateQuery("query-key", "default value not required");
+	const [value, setValue] = useStateQuery(
+		"query-key",
+		"default value not required",
+	);
 
 	return (
 		<div>
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => {
-          setValue(e.target.value); // query also updated, refresh the page and see the same value
-        }}
-      />
-    </div>
+			<input
+				type="text"
+				value={value}
+				onChange={(e) => {
+					setValue(e.target.value); // query also updated, refresh the page and see the same value
+				}}
+			/>
+		</div>
 	);
 }
 
