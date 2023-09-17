@@ -27,6 +27,8 @@
 
 # 🤓 Usage
 
+Real-life example: https://react-state-query.glitch.me
+
 ```js
 import { useStateQuery } from "react-state-query";
 
