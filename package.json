@@ -1,0 +1,48 @@
+{
+	"name": "react-state-query",
+	"version": "0.0.1",
+	"main": "dist",
+	"typings": "dist",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/barbarbar338/react-state-query"
+	},
+	"author": {
+		"email": "hi@338.rocks",
+		"name": "Barış DEMİRCİ",
+		"url": "https://338.rocks/"
+	},
+	"license": "GPL-3.0",
+	"description": "🚀 Save state of your React app in URL!",
+	"scripts": {
+		"prebuild": "rimraf dist",
+		"build": "tsc",
+		"format": "prettier --write .",
+		"lint": "eslint --fix .",
+		"update": "taze latest -w"
+	},
+	"devDependencies": {
+		"@types/node": "^20.6.2",
+		"@types/qs": "^6.9.8",
+		"@types/react": "^18.2.21",
+		"@types/react-dom": "^18.2.7",
+		"@typescript-eslint/eslint-plugin": "^6.7.0",
+		"@typescript-eslint/parser": "^6.7.0",
+		"eslint": "^8.49.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-import": "^2.28.1",
+		"prettier": "^3.0.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"taze": "^0.11.2",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.2.2"
+	},
+	"peerDependencies": {
+		"react": ">=16"
+	},
+	"dependencies": {
+		"qs": "^6.11.2",
+		"tslib": "^2.6.2"
+	}
+}
