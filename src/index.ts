@@ -1,7 +1,7 @@
 import { parse, stringify } from "qs";
 import { useEffect, useState } from "react";
 
-const win = window || null;
+const win = typeof window !== "undefined" ? window : null;
 
 export const useStateQuery = <T extends boolean>(
 	key: string,
